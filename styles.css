@@ -1,0 +1,347 @@
+/* General Styles */
+body {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+  background-color: #e4e4e4;
+  font-family: Poppins, sans-serif;
+  max-width: 1208px;
+}
+
+h1 {
+  color: #4587c5;
+  text-align: center;
+  margin: 0;
+}
+
+h2 {
+  color: #29659e;
+  text-align: center;
+  margin-top: 10px;
+}
+
+h3 {
+  color: #fff;
+  text-align: center;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+p {
+  margin: 10px 10px 10px 10px;
+}
+
+button {
+  font-family: Poppins, sans-serif; 
+  background-color: #4587c5;
+  color: white;
+  padding: 15px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+button:hover {
+  background-color: #29659e;
+}
+
+/* Nav Styles */
+#navbar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #4587c5;
+}
+
+#navLogo {
+  font-size: 16px;
+  background-color: #4587c5;
+  padding: 16px;
+  border: none;
+  cursor: pointer;
+  margin-right: auto;
+}
+
+#navLogo:hover {
+  background-color: #29659e;
+}
+
+.navLinks{
+  background-color: #4587c5;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.navLinks:hover {
+  background-color: #29659e;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  background-color: #4587c5;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: #4587c5;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #dddddd;
+  color: #29659e;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Main Styles */
+main {
+  margin: 0 auto;
+  background-color: #ffffff;
+}
+
+.section {
+  padding: 25px 25px 35px 25px;
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+  min-height: 250px;
+}
+
+#intro {
+  text-align: center;
+  margin-top: 65px;
+}
+
+#programs {
+  display: flex;
+}
+
+.third {
+  width: 33%; 
+  padding: 10px 15px;
+  text-align: center;
+}
+
+#smallGallery {
+  display: flex;
+}
+
+.overlayContainer {
+  position: relative;
+  width: 50%;
+}
+
+.overlayImage {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #29659e;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.overlayContainer:hover .overlay {
+  height: 100%;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* Gallery Styles */
+.row {
+  display: -ms-flexbox; 
+  display: flex;
+  -ms-flex-wrap: wrap; 
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create three equal columns that sits next to each other */
+.column {
+  -ms-flex: 30%; 
+  flex: 30%;
+  max-width: 33%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Program Styles */
+.programImg {
+  float: left;
+  margin: 0 5%;
+}
+
+.programInfo {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.programSection {
+  margin: 0 auto;
+  padding: 25px 250px;
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.programSection h1 {
+  padding-bottom: 10px;
+}
+
+.programSection img {
+  margin: 10px 25px 0 25px;
+  width: 300px;
+  height: 200px;
+  float: right;
+}
+
+.centerP {
+  display: flex;
+  height: 225px;
+  margin: auto;
+  align-items:center;
+  justify-content:center;
+}
+
+/* About Styles */
+#about {
+  display: flex;
+}
+
+#about div img {
+  margin-top: 25px;
+}
+
+aside {
+  background: rgb(69,135,197);
+  background: radial-gradient(circle, rgba(69,135,197,1) 0%, rgba(41,101,158,1) 100%);
+  width: 100%;
+  padding: 25px;
+}
+
+aside p{
+  font-size: 13px;
+  color: #fff;
+}
+
+/* Contact Styles */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  font-family: Poppins, sans-serif; 
+  background-color: #4587c5;
+  color: white;
+  padding: 15px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 35px;
+  margin: 0 auto;
+}
+
+input[type=submit]:hover {
+  background-color: #29659e;
+}
+
+.contactForm {
+  font-family: Poppins, sans-serif;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin: 0 auto;
+  width: 60%;
+}
+
+#small p {
+  width: 60%;
+  margin: 25px auto;
+  text-align: center;
+}
+
+#addy {
+  text-align: center;
+  color: #29659e;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #ffffff;
+  color: #4587c5;
+  text-align: center;
+  padding: 15px;
+}
+
+/* Layout Styles*/
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
